@@ -1,21 +1,26 @@
-/* Aula de Manipulação de dados */
+/*
+ * Copyright (c) 2020 Rodrigo Barros. All rights reserved.
+ * Aula de Modificadores de Tipo
+ */
+ 
 #include <iostream>
 
-//using namespace std;
+int main()  {
 
-int main() {
-  /* ler valor e atribui a num1 */
-  std::cout << "Informe um número: \n";
-  int num1 = 0;
-  std::cin >> num1;
+   int a = 0;  // 4 bytes
+   short int b = 0; // 2 bytes
+   long int c = 0; // 4 bytes
 
-  /* ler valor e atribui a num2 */
-  std::cout << "informe outro numero:  \n";
-  int num2 = 0;
-  std::cin >> num2;
-  
-  /* Exibir valores na tela */
-  std::cout << "Os números digitados foram:  " << num1 << " e "  << num2;
+   int a2 = 0;
+   signed int b2 = -10;
+   unsigned int c2 = -10;
 
-  return 0;
+   std::cout << sizeof(a) << " - " << a2 << "\n";
+   std::cout << sizeof(a) << " - " << b2 << "\n";
+   std::cout << sizeof(c) << " - " << c2 << "\n";
+
+   char caractere = 127;  // não possui erro
+   char caractere2 = -127; // não possui erro
+
+
 }
