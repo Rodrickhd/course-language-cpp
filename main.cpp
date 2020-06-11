@@ -1,31 +1,30 @@
 /*
  * Copyright (c) 2020 Rodrigo Barros. All rights reserved.
- * Aula de Operadores Aritméticos
+ * Simple Calculator
  */
  
 #include <iostream>
 
 int main()  {
    
-   //            x = 3      y = 9
-   // + (adiciona 2 operandos)             ex: x + y = 12
-   // - (Subtração entre os operados)      ex: x - y = -6
-   // * (Multiplicação entre os operados)  ex: x * y = 27
-   // / (Divisão entre os operados)        ex: x / y = 3
+  int num1, num2, soma, sub, multi, div;
 
-  int x, y;
-  x = 3;
-  y = 9;
+  std::cout << "Welcome to the my first Calculator" << "\n" ;
+  std::cout << "Enter the first number: " << "\n" ;
+  std::cin >> num1 ;
+  std::cout << "Enter the second number: " << "\n" ;
+  std::cin >> num2;
 
-  std::cout << "O valor de x e y é: " << x << " e " << y << "\n" ;
+  soma = num1 + num2 ; // soma
+  sub = num1 - num2 ; // sub
+  multi = num1 * num2 ; // multi
+  div = num1 / num2 ; // div
 
-  std::cout << "A soma entre x e y é: "  << x + y << "\n" ;
-  std::cout << "A subtração entre x e y é: "  << x - y << "\n" ;
-  std::cout << "A Multiplicação entre x e y é: " << x * y << "\n" ;
-  std::cout << "A Divisão	 entre x e y é: " << y / x << "\n" ;
+  std::cout << "The sum is: " << soma << "\n" ;
+  std::cout << "The subtraction is: " << sub << "\n" ;
+  std::cout << "The product is: " << multi << "\n" ;
+  std::cout << "The division is: " << div << "\n" ;
 
-  double d = y / (x+1.0) ;
-  std::cout << "A Divisão entre x e y é: " << d << "\n" ;
-  
+
 }
 
