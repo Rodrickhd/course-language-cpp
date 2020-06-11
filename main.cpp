@@ -1,26 +1,26 @@
 /*
  * Copyright (c) 2020 Rodrigo Barros. All rights reserved.
- * Aula de Modificadores de Tipo
+ * Aula de Operadores Aritméticos
  */
  
 #include <iostream>
 
 int main()  {
+   
+   //            x = 3      y = 9
+   // + (adiciona 2 operandos)             ex: x + y = 12
+   // - (Subtração entre os operados)      ex: x - y = -6
+   // * (Multiplicação entre os operados)  ex: x * y = 27
+   // / (Divisão entre os operados)        ex: x / y = 3
 
-   int a = 0;  // 4 bytes
-   short int b = 0; // 2 bytes
-   long int c = 0; // 4 bytes
+  int x, y;
+  x = 3;
+  y = 9;
 
-   int a2 = 0;
-   signed int b2 = -10;
-   unsigned int c2 = -10;
+  std::cout << "O valor de x e y é: " << x << " e " << y << "\n" ;
 
-   std::cout << sizeof(a) << " - " << a2 << "\n";
-   std::cout << sizeof(a) << " - " << b2 << "\n";
-   std::cout << sizeof(c) << " - " << c2 << "\n";
-
-   char caractere = 127;  // não possui erro
-   char caractere2 = -127; // não possui erro
-
-
+  std::cout << "A soma entre x e y é: "  << x + y << "\n" ;
+  std::cout << "A subtração entre x e y é: "  << x - y << "\n" ;
+  std::cout << "A Multiplicação entre x e y é: " << x * y << "\n" ;
+  std::cout << "A Divisão	 entre x e y é: " << y / x << "\n" ;
 }
