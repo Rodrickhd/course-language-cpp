@@ -24,9 +24,8 @@ int main()  {
   std::cout << "A Multiplicação entre x e y é: " << x * y << "\n" ;
   std::cout << "A Divisão	 entre x e y é: " << y / x << "\n" ;
 
-double d = y / (x+1.0) ;
-std::cout << "A Divisão entre x e y é: " << d << "\n" ;
-
-
+  double d = y / (x+1.0) ;
+  std::cout << "A Divisão entre x e y é: " << d << "\n" ;
+  
 }
 
