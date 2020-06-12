@@ -1,35 +1,24 @@
 /*
  * Copyright (c) 2020 Rodrigo Barros. All rights reserved.
- * Relational operators
+ * Decision Making 1
  */
  
 #include <iostream>
 
-/*
-*
-* Logic           (bool)
-* Caracter        (char)
-* Inteiro         (int)
-* Floating point  (float)
-* Floating point  (double)
-* no value        (void)
-* Long texts      (wchar_t)
-*/
-
 int main()  {
    
- bool b = true;
- bool b2 = (1 == 1);
+  int i = 5, i2 = 5;
 
- std::cout << "The value in 'b' is equal to: " << b << "\n" ;
- std::cout << "The value in 'b2' is equal to: " << b2 << "\n" ;
+  std::cout << "Se o valor de i for igual ao valor de i2, entao a frase a seguir será impressa. \n";
+  //i << é igual a >> i2
+ 
+  if(i == i2) {
+    std::cout << "A variavel i é igual a variavel i2, \n " ;
+  
+ COLOQUE AGUA NO FILTRO
 
- // True representa o valor 1
- // False representa o valor 0
 
- bool c = 0;
- bool c2 = 1;
-
- std::cout << "The value is: " << (c2 == true) << "\n" ;
 }
+
+
 
