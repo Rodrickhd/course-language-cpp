@@ -1,26 +1,42 @@
 /*
  * Copyright (c) 2020 Rodrigo Barros. All rights reserved.
- * Else struture
+ * Tomada de decisão 3 (Exemplo com médias de notas de semestre)
  */
  
 #include <iostream>
 
 int main()  {
  
- std::cout << "Digite um número qualquer" << "\n" ;
- int valor = 0;
- std::cin >> valor;
+ double nota1, nota2, nota3, nota4;
+ std::cout <<"Digite sua primeira nota do semestre >>> ";
+ std::cin >> nota1 ;
+ std::cout << "Digite sua segunda nota do semestre >>> ";
+ std::cin >> nota2;
+ std::cout << "Digite sua terceira nota do semestre >>> ";
+ std::cin >> nota3;
+ std::cout << "Digite sua quarta nota do semestre >>> ";
+ std::cin >> nota4;
 
-  if(valor > 50) {
-    std::cout << "O valor digitado é maior do que 50." << "\n";
-  }else{
-    std::cout << "O valor digitado é menor do que 50. \n";
-  }
-  
+ double soma = nota1 + nota2 + nota3 + nota4;
+ soma = (soma / 4);
+
+ std::cout << "A sua media no semestre foi: " << soma << "\n" ;
+
  
+ if (soma >= 6) {
+  std::cout <<"Parabens! Voce foi aprovado!" << "\n" ;
+  }else{
+  std::cout << "Vish, Infelizmente voce foi reprovado!" << "\n";
+}
+
+
+
+
+
+
 
 
 }
-
+  
 
 
