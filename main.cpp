@@ -7,33 +7,18 @@
 
 int main()  {
  
- double nota1, nota2, nota3, nota4;
- std::cout <<"Digite sua primeira nota do semestre >>> ";
- std::cin >> nota1 ;
- std::cout << "Digite sua segunda nota do semestre >>> ";
- std::cin >> nota2;
- std::cout << "Digite sua terceira nota do semestre >>> ";
- std::cin >> nota3;
- std::cout << "Digite sua quarta nota do semestre >>> ";
- std::cin >> nota4;
+std::cout << "Digite um numero no intervalo de 45 até 72" << "\n";
+int i = 0;
+std::cin >> i;
 
- double soma = nota1 + nota2 + nota3 + nota4;
- soma = (soma / 4);
+if(i >= 45 && i <= 72) {
+std::cout << "Obrigado por informar o numero " << " no intervalo solicitado" << "\n" ;
 
- std::cout << "A sua media no semestre foi: " << soma << "\n" ;
+ if(i == 45 || i == 72)
+ std::cout << "O valor de i é igual ao valor de algum extremo" << "\n";
 
- 
- if (soma >= 6) {
-  std::cout <<"Parabens! Voce foi aprovado!" << "\n" ;
-  }else{
-  std::cout << "Vish, Infelizmente voce foi reprovado!" << "\n";
-}
-
-
-
-
-
-
+}else
+  std::cout << "O numero digitado não está no intervalo solicitado" << "\n";
 
 
 }
