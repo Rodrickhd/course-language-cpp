@@ -7,25 +7,31 @@
 
 int main()  {
    
-  float num1, num2, soma, sub, div, multi;
-
-  /* Value entry */
-  std::cout << "Enter the first number: \n";
+  float num1, num2, resultado;
+  char op;
+  
+  std::cout << "Digite o primeiro numero" << "\n";
   std::cin >> num1;
-  std::cout << "Enter the second number: \n";
+
+  std::cout << "Digite uma das operações [+, -, /, * " << "\n";
+  std::cin >> op;
+
+  std::cout << "Digite o segundo numero:" << "\n";
   std::cin >> num2;
 
-  /* Value Calculation */
-  soma = num1 + num2;
-  div = num1 / num2;
-  multi = num1 * num2;
-  sub = num1 - num2;
+  if(op == '+') resultado = num1 + num2 ;
+
+  else if(op == '-') resultado = num1 - num2;
+
+  else if(op == '/') resultado = num1 / num2;
+
+  else if(op == '*') resultado = num1 * num2;
+
+  std::cout << num1 << op << num2 << " = " << resultado << "\n";
+
   
-  /* Value exhibition  */
-  std::cout << num1 << " + " << num2 << " = " << soma << "\n" ;
-  std::cout << num1 << " - " << num2 << " = " << sub << "\n" ;
-  std::cout << num1 << " / " << num2 << " = " << div << "\n" ;
-  std::cout << num1 << " * " << num2 << " = " << multi << "\n" ;
   
+
+
 }
 
